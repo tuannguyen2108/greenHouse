@@ -1,0 +1,298 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  position: relative;
+}
+
+.img_bg {
+  width: 200px;
+  z-index: -99;
+  position: absolute;
+}
+
+header {
+  background-color: #4d79a8;
+  color: #fff;
+  margin: 0;
+  /* font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  height: 70px; */
+}
+
+#hd_line {
+  margin: 0 300px 15px 300px;
+  padding: 0;
+  background-color: #fff;
+  height: 3px;
+}
+
+#hd_container {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+  /* padding: 10px 20px; */
+  height: 85px;
+}
+#hd_container img {
+  width: 70px;
+  margin: 0 100px 0 100px;
+}
+
+#hd_container h3 {
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+#currentDateTime {
+  color: #020110;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-image: url(images/hinh-nen-desktop.jpg); */
+  /* background-size: auto; */
+  background-repeat: no-repeat;
+}
+
+#img-1 {
+  background: url(https://toolsviet.com/wp-content/uploads/2023/09/co2-co-vai-tro-quan-trong-trong-cong-viec-nhu-the-nao-va-khi-nao-nen-su-dung-may-do-khi-co2-1.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background: white;
+}
+
+.sensor-box {
+  background-color: white;
+  border: 1px solid #474646;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  flex: 1 0 350px;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.control-box {
+  background-color: white;
+  border: 1px solid #474646;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  flex: 1 0 300px;
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-box.cua {
+  max-width: 400px;
+}
+
+.control-box.quat h3 {
+  font-size: 20px;
+}
+
+.equipment-box {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgba(253, 251, 251, 0.8);
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  flex: 1 0 300px;
+  max-width: 220px;
+  height: 230px;
+  color: black;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+}
+
+span {
+  font-size: 24px;
+  color: #337ad6;
+  font-weight: 500;
+}
+
+.switch-small {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-small input {
+  display: none;
+}
+
+.switch-small label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #a5a39d;
+  font-size: 30px;
+  text-align: center;
+  line-height: 45px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background: linear-gradient(#f7f2f6, #b2ac9e);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.switch-small .icon-off::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  margin: -35% 0 0 -35%;
+  border-radius: 50%;
+  background: linear-gradient(#cbc7bc, #d2cbc3);
+  box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.05),
+    0 2px 5px rgba(255, 255, 255, 0.1);
+  filter: blur(1px);
+}
+
+.switch-small input:checked + label {
+  background: linear-gradient(#08e1d9, #f7f2f6);
+  color: white;
+}
+
+.switch-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.switch {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #a5a39d;
+  font-size: 50px;
+  text-align: center;
+  line-height: 75px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  background: linear-gradient(#f7f2f6, #b2ac9e);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.switch .icon-off::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  margin: -35% 0 0 -35%;
+  border-radius: 50%;
+  background: linear-gradient(#cbc7bc, #d2cbc3);
+  box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.05),
+    0 2px 5px rgba(255, 255, 255, 0.1);
+  filter: blur(1px);
+}
+
+.switch input:checked + label {
+  background: linear-gradient(#08e1d9, #f7f2f6);
+  color: white;
+}
+
+.slider {
+  width: 80%;
+}
+
+.slider-value {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* MỚI */
+
+/* fan img */
+#fanImg {
+  /* Đặt trạng thái xoay mặc định */
+  animation: spin 0s infinite linear; /* Cho phép xoay liên tục nhưng tốc độ là 0 */
+}
+
+.icon {
+  width: 150px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
